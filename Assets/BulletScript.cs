@@ -24,7 +24,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Border"))
+        if (other.CompareTag("Border") || other.CompareTag("enemy"))
         {
             Destroy(gameObject);
         }
